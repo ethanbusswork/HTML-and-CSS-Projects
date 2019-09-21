@@ -1,0 +1,13 @@
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    border-radius: 25px;
+}
+
+img {
+    filter: grayscale(50%)
+}
