@@ -152,6 +152,8 @@ form input[type="text"] {
 
 img.demo {
     opacity: 0.6;
+    height: 240px;
+    width: 30vw;
 }
 
 .active,

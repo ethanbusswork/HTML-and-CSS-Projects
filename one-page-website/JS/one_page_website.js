@@ -7,6 +7,7 @@ function openModal() {
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
+
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -26,6 +27,7 @@ function showSlides(n) {
 }
 
 
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -36,6 +38,6 @@ function plusSlides(n) {
 
 // thumbnail controls 
 function currentSlide(n) {
-    showSlides(showSlides = n);
+    showSlides(slideIndex = n);
 }
 
