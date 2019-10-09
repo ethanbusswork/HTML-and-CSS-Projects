@@ -1,103 +1,211 @@
 <!doctype html>
 <html>
-	<head>
-		<title>
-			FIRAXIS GAMES
-		</title>
-		<link rel="stylesheet" type="text/css" href="./one_page_style.css"
-	</head>
-	<body background="images/background.jpg">
-	
+
+<head>
+	<title>
+		FIRAXIS GAMES
+	</title>
+	<link rel="stylesheet" type="text/css" href="./one_page_style.css" </head> <body background="images/background.jpg">
+
 	<!--NAV-->
 	<div class="a">
-		<center><nav><h2>
-			<a href="#home" id="link">HOME</a>
-			|
-			<a href="#gallery" id="link">PHOTOS</a>
-			|
-			<a href="#videos" id="link">VIDEOS</a>
-			|
-			<a href="#contact" id="link">NEWSLETTER</a>
-		</h2></nav></center>
+		<center>
+			<nav>
+				<h2>
+					<a href="#home" id="link">HOME</a>
+					|
+					<a href="#gallery" id="link">PHOTOS</a>
+					|
+					<a href="#videos" id="link">VIDEOS</a>
+					|
+					<a href="#contact" id="link">NEWSLETTER</a>
+				</h2>
+			</nav>
+		</center>
 	</div>
-	
+
 	<!--HOMEPAGE-->
 	<div id="home">
-	<img src="images/logo.png" class="center">
-	<br><br><br><br><br>
-	<br><br><br><br><br>
-	<center><titlefont>
-		Welcome to our HUB
-	</titlefont></center>
+		<img src="images/logo.png" class="center">
+		<br><br><br><br><br>
+		<br><br><br><br><br>
+		<center>
+			<titlefont>
+				Welcome to our HUB
+			</titlefont>
+		</center>
 	</div>
 	<br><br><br><br><br>
 	<br><br><br><br><br>
 	<br><br><br><br><br>
 	<br>
-	
+
 	<!--GALLERY-->
 	<div id="gallery">
-		<table align="center">
-			<tr>
-				<td colspan="3" style="text-align:center;">
-					<titlefont>XCOM 2</titlefont>
-				</td>
-			<tr>
-				<td>
-					<a href="images/XCOM2/thumb1.jpg" target="_blank"><img src="images/XCOM2/thumb1.jpg"
-					height=240 width=430></a>
-				<td>
-					<a href="images/XCOM2/thumb2.jpg" target="_blank"><img src="images/XCOM2/thumb2.jpg"
-					height=240 width=430></a>
-				<td>
-					<a href="images/XCOM2/thumb3.jpg" target="_blank"><img src="images/XCOM2/thumb3.jpg"
-					height=240 width=430></a>
-				</td>
-			<tr>
-				<td>
-					<a href="images/XCOM2/thumb4.jpg" target="_blank"><img src="images/XCOM2/thumb4.jpg"
-					height=240 width=430></a>
-				<td>
-					<a href="images/XCOM2/thumb6.jpg" target="_blank"><img src="images/XCOM2/thumb6.jpg"
-					height=240 width=430></a>
-				<td>
-					<a href="images/XCOM2/thumb5.jpg" target="_blank"><img src="images/XCOM2/thumb5.jpg"
-					height=240 width=430></a>
-				</td>
-			</tr>
-		</table>
-		<table align="center">
-			<tr>
-				<td colspan="3" style="text-align:center;">
-					<titlefont>Civilization VI</titlefont>
-				</td>
-			<tr>
-				<td>
-					<a href="images/CIV5/thumb1.jpg" target="_blank"><img src="images/CIV5/thumb1.jpg"
-					height=240 width=430></a>
-				<td>
-					<a href="images/CIV5/thumb1.jpg" target="_blank"><img src="images/CIV5/thumb2.jpg"
-					height=240 width=430></a>
-				<td>
-					<a href="images/CIV5/thumb1.jpg" target="_blank"><img src="images/CIV5/thumb3.jpg"
-					height=240 width=430></a>
-				</td>
-			<tr>
-				<td>
-					<a href="images/CIV5/thumb1.jpg" target="_blank"><img src="images/CIV5/thumb4.jpg"
-					height=240 width=430></a>
-				<td>
-					<a href="images/CIV5/thumb1.jpg" target="_blank"><img src="images/CIV5/thumb5.jpg"
-					height=240 width=430></a>
-				<td>
-					<a href="images/CIV5/thumb1.jpg" target="_blank"><img src="images/CIV5/thumb6.jpg"
-					height=240 width=430></a>
-				</td>
-			</tr>
-		</table>
+		<div class="row">
+			<div id="titletext">
+				<titlefont>XCOM 2</titlefont>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img src="images/XCOM2/thumb1.jpg" onclick="openModal();currentSlide(1)"  class="hover-shadow" height=240 width=430>
+			</div>
+			<div class="column">
+				<img src="images/XCOM2/thumb2.jpg" onclick="openModal();currentSlide(2)"  class="hover-shadow" height=240 width=430>
+			</div>
+			<div class="column">
+				<img src="images/XCOM2/thumb3.jpg" onclick="openModal();currentSlide(3)"  class="hover-shadow" height=240 width=430>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img src="images/XCOM2/thumb4.jpg" onclick="openModal();currentSlide(4)"  class="hover-shadow" height=240 width=430>
+			</div>
+			<div class="column">
+				<img src="images/XCOM2/thumb6.jpg" onclick="openModal();currentSlide(5)"  class="hover-shadow" height=240 width=430>
+			</div>
+			<div class="column">
+				<img src="images/XCOM2/thumb5.jpg" onclick="openModal();currentSlide(6)"  class="hover-shadow" height=240 width=430>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="titletext">
+				<titlefont>Civilization VI</titlefont>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img src="images/CIV5/thumb1.jpg" onclick="openModal();currentSlide(7)"  class="hover-shadow" height=240 width=430>
+			</div>
+			<div class="column">
+				<img src="images/CIV5/thumb2.jpg" onclick="openModal();currentSlide(8)"  class="hover-shadow" height=240 width=430>
+			</div>
+			<div class="column">
+				<img src="images/CIV5/thumb3.jpg" onclick="openModal();currentSlide(9)"  class="hover-shadow" height=240 width=430>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<img src="images/CIV5/thumb4.jpg" onclick="openModal();currentSlide(10)"  class="hover-shadow" height=240 width=430>
+			</div>
+			<div class="column">
+				<img src="images/CIV5/thumb5.jpg" onclick="openModal();currentSlide(11)"  class="hover-shadow" height=240 width=430>
+			</div>
+			<div class="column">
+				<img src="images/CIV5/thumb6.jpg" onclick="openModal();currentSlide(12)"  class="hover-shadow" height=240 width=430>
+			</div>
+		</div>
+	</div>
+
+	<!--Modal-->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 12</div>
+				<img src="images/XCOM2/thumb1.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 12</div>
+				<img src="images/XCOM2/thumb2.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 12</div>
+				<img src="images/XCOM2/thumb3.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 12</div>
+				<img src="images/XCOM2/thumb4.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 12</div>
+				<img src="images/XCOM2/thumb6.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 / 12</div>
+				<img src="images/XCOM2/thumb5.jpg" style="width: 100%;">
+			</div>
+
+
+			<div class="mySlides">
+				<div class="numbertext">7 / 12</div>
+				<img src="images/CIV5/thumb1.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">8 / 12</div>
+				<img src="images/CIV5/thumb2.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">9 / 12</div>
+				<img src="images/CIV5/thumb3.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">10 / 12</div>
+				<img src="images/CIV5/thumb4.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">11 / 12</div>
+				<img src="images/CIV5/thumb5.jpg" style="width: 100%;">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">12 / 12</div>
+				<img src="images/CIV5/thumb6.jpg" style="width: 100%;">
+			</div>
+
+		</div>
+
+		<!--Next/Prev controls-->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<!--Caption Text-->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+
+		<!--THumbnail image controls-->
+		<div class="column">
+			<img class="demo" src="images/XCOM2/thumb1.jpg" onclick="currentSlide(1)" alt="">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="images/XCOM2/thumb2.jpg" onclick="currentSlide(2)" alt="">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="images/XCOM2/thumb3.jpg" onclick="currentSlide(3)" alt="">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="images/XCOM2/thumb4.jpg" onclick="currentSlide(4)" alt="">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="images/XCOM2/thumb6.jpg" onclick="currentSlide(5)" alt="">
+		</div>
+
+		<div class="column">
+			<img class="demo" src="images/XCOM2/thumb5.jpg" onclick="currentSlide(6)" alt="">
+		</div>
+
 	</div>
 	<br><br><br>
-	
+
 	<!--VIDEOS-->
 	<div id="videos">
 		<table align="center">
@@ -107,10 +215,9 @@
 				</td>
 			<tr>
 				<td>
-					<iframe width="1280" height="720" 
-					src="https://www.youtube.com/embed/ZlF4_o3qALo" 
-					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-					allowfullscreen></iframe>
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/ZlF4_o3qALo" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</td>
 			<tr>
 				<td style="text-align:center;">
@@ -118,54 +225,62 @@
 				</td>
 			<tr>
 				<td>
-					<iframe width="1280" height="720" 
-					src="https://www.youtube.com/embed/5KdE0p2joJw" 
-					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-					allowfullscreen></iframe>
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/5KdE0p2joJw" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</td>
 			</tr>
 		</table>
 	</div>
 	<br><br><br><br><br>
 	<br><br><br><br><br>
-	
-	
+
+
 	<!--CONTACT-->
 	<div id="contact">
-				<center><titlefont>
-					NEWSLETTER
-				</titlefont></center>
-				<div>
-					<center><h2>
-						Fill in the below fields to be included in our monthly newsletter
-					</h2>
-					<p>
-						Please provide us with your basic contact information
-					</p></center>
-					<div>
-						<center><form action="" method="post">
-							<input class="rsvp" type="text" value="First Name">
-							<br>
-							<input class="rsvp" type="text" value="Last Name">
-							<br>
-							<input class="rsvp" type="text" value="Email Address">
-							<br>
-							<input class="rsvp" type="text" value="Phone Number">
-							<br>
-							<input type="submit" value="Submit">
-						</form></center>
-					</div>
-				</div>
+		<center>
+			<titlefont>
+				NEWSLETTER
+			</titlefont>
+		</center>
+		<div>
+			<center>
+				<h2>
+					Fill in the below fields to be included in our monthly newsletter
+				</h2>
+				<p>
+					Please provide us with your basic contact information
+				</p>
+			</center>
+			<div>
+				<center>
+					<form action="" method="post">
+						<input class="rsvp" type="text" value="First Name">
+						<br>
+						<input class="rsvp" type="text" value="Last Name">
+						<br>
+						<input class="rsvp" type="text" value="Email Address">
+						<br>
+						<input class="rsvp" type="text" value="Phone Number">
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+				</center>
+			</div>
+		</div>
 	</div>
 	<br><br><br><br><br>
 	<br><br><br><br><br>
 	<br><br><br><br><br>
 	<br><br><br><br><br>
 	<br><br><br><br><br>
-	
+
 	<!--FOOTER-->
 	<footer>
-	  <p>NOTE: This site is not affiliated with FIRAXIS GAMES&copy </p>
+		<p>NOTE: This site is not affiliated with FIRAXIS GAMES&copy </p>
 	</footer>
+
+	<script src="JS/one_page_website.js"></script>
 	</body>
+
 </html>
